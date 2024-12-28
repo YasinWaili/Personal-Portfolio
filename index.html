@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Personal Portfolio</title>
     <style>
         /* General styles */
         body {
             margin: 0;
-            font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
+            font-family: "Rubik", sans-serif; /* Change font to Rubik */
             background-color: #f4f4f4; /* Soft background color for the page */
             color: #333; /* Default text color */
         }
@@ -45,7 +46,7 @@
 
         .social-icons {
             display: flex;
-            gap: 15px; /* Space between icons */
+            gap: 15px; /* Add space between icons */
         }
 
         .social-icons a {
@@ -57,11 +58,19 @@
         .social-icons a:hover {
             color: #555; /* Highlight on hover */
         }
+
+        .header {
+            color: Black; 
+            margin-left: 40px;
+
+        }
     </style>
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <div class="top-bar">
+        <!-- Navigation text -->
         <div class="nav-container">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -69,6 +78,8 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
+
+        <!-- Social icons -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/yasin-waili/" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
@@ -76,8 +87,14 @@
             <a href="https://github.com/YasinWaili" target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
+            <a title="Dark Mode">
+                <i class="fas fa-moon"></i>
+            </a>
         </div>
     </div>
-</body>
 
-</html>
+    <div class="header">
+        <h1>Yasin Waili</h1>
+    </div>
+    
+</body>
