@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Soft background color for the page */
+            color: #333; /* Default text color */
+        }
+
+        /* Top bar styling */
+        .top-bar {
+            background-color: #f4f4f4; /* Same as page background for blending */
+            border-bottom: 1px solid #ddd; /* Subtle border for separation */
+            display: flex;
+            justify-content: flex-end; /* Align links to the right */
+            align-items: center;
+            padding: 10px 20px; /* Add some padding for spacing */
+            position: sticky; /* Sticks to the top when scrolling */
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar a {
+            color: #333; /* Black text for navigation links */
+            text-decoration: none;
+            font-size: 14px; /* Smaller text size */
+            padding: 2px 1px;
+            margin-left: 30px; /* Space between links */
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: white; /* Highlight text */
+            background-color: #555; /* Subtle highlight on hover */
+            border-radius: 4px;
+        }
     </style>
-    
 </head>
+
+<body>
+    <div class="top-bar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</body>
 
 </html>
