@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Personal Portfolio</title>
     <style>
         /* General styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
             background-color: #f4f4f4; /* Soft background color for the page */
             color: #333; /* Default text color */
         }
@@ -30,9 +31,9 @@
         .top-bar a {
             color: #333; /* Black text for navigation links */
             text-decoration: none;
-            font-size: 14px; /* Smaller text size */
+            font-size: 15px; /* Smaller text size */
             padding: 2px 1px;
-            margin-left: 30px; /* Space between links */
+            margin-right: 30px; /* Space between links */
             transition: color 0.3s, background-color 0.3s;
         }
 
@@ -41,16 +42,41 @@
             background-color: #555; /* Subtle highlight on hover */
             border-radius: 4px;
         }
+
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Space between icons */
+        }
+
+        .social-icons a {
+            color: #333; /* Icon color */
+            font-size: 18px; /* Icon size */
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #555; /* Highlight on hover */
+        }
     </style>
 </head>
 
 <body>
     <div class="top-bar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yasin-waili/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/YasinWaili" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </div>
 </body>
 
