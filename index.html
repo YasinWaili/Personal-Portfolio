@@ -77,7 +77,7 @@
             top: 60px;
         }
 
-        .subheader {
+        .Sub-Text {
             color:#7f8c8d;; /* Soft gray */
             font-size: 10px;
             margin-left: 100px;
@@ -87,7 +87,7 @@
             line-height: 1.5;
         }
 
-        .skillsHeader {
+        .Sub-Header {
             color: #2c3e50; /* Dark blue-gray */
             font-size: 16px;
             text-align: center;
@@ -146,11 +146,11 @@
         }
 
         .skill img {
-    width: 60px; /* Adjust icon size */
-    height: 60px;
-    margin-bottom: 10px; /* Space between icon and text */
-    object-fit: contain; /* Ensures the image fits nicely */
-}
+            width: 60px; /* Adjust icon size */
+            height: 60px;
+            margin-bottom: 10px; /* Space between icon and text */
+            object-fit: contain; /* Ensures the image fits nicely */
+        }
 
 
         .skill p {
@@ -160,6 +160,107 @@
             margin: 0;
         }
         
+        /* Projects section container */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual project box */
+        .project-box {
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Project image */
+        .project-box img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        /* Project title */
+        .project-box h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Project description */
+        .project-box p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        /* Project skills icons */
+        .project-skills {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-skills img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+
+        .project-skills img:hover {
+            transform: scale(1.1);
+        }
+
+        /* GitHub link styling */
+        .github-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 120px;
+            text-align: center;
+        }
+
+        .github-link i {
+            margin-right: 8px; /* Space between icon and text */
+            font-size: 18px;
+        }
+
+        .github-link:hover {
+            background-color: #555;
+            color: white;
+            transform: translateY(-2px);
+        }
+
         
     </style>
 </head>
@@ -199,7 +300,7 @@
         <h1>Yasin Waili</h1>
     </div>
 
-    <div class="subheader">
+    <div class="Sub-Text">
         <h1>I am a passionate computer science student currently in my third year at Carleton University. 
             I am enthusiastic about solving complex problems, 
             building efficient systems, and continuously expanding my technical knowledge.</h1>
@@ -209,7 +310,8 @@
         Resume  <i class="fas fa-file"></i>
     </a>
 
-    <div class="skillsHeader">
+    <!-- Skills section -->
+    <div class="Sub-Header">
         <h1>Skills</h1>
     </div>
 
@@ -264,8 +366,55 @@
         </div>
     </div>
     
-        
-    </div>
+    <!-- Projects section -->
+    <section id="projects" class="full-page">
+        <div class="Sub-Header">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="Project images/Boss-Battle-Game.png" alt="Boss Battle Game Image">
+                <h2>Boss Battle Game</h2>
+                <p>This is a description of Project 1. It highlights what the project does, its features, and any interesting technical details.</p>
+                <div class="project-skills">
+                    <img src="icons/c++.png" alt="C++ Icon" title="C++">
+                    <img src="icons/linux.png" alt="Linux Icon" title="Linux">
+                    <img src="icons/git.png" alt="Git Icon" title="Git">
+                </div>
+                <a href="https://github.com/YasinWaili/Boss-Battle-Game" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="project-box">
+                <img src="Project images/Music-Streaming-Database-Application.png" alt="Music Streaming Database Application Image">
+                <h2>Music Streaming Database Application</h2>
+                <p>This is a description of Project 2. It describes the problem solved, key features, and technologies used.</p>
+                <div class="project-skills">
+                    <img src="icons/javascript.png" alt="Python Icon" title="Python">
+                    <img src="icons/html.png" alt="Python Icon" title="Python">
+                    <img src="icons/css.png" alt="Python Icon" title="Python">
+                    <img src="icons/sql.png" alt="SQLite Icon" title="SQLite">
+                </div>
+                <a href="https://github.com/YasinWaili/Music-Database-Player" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="project-box">
+                <img src="Project images/Stock-Data-Analysis-Tool.png" alt="Stock Data Analysis Tool Image">
+                <h2>Stock Data Analysis Tool</h2>
+                <p>This is a description of Project 3. It describes the problem solved, key features, and technologies used.</p>
+                <div class="project-skills">
+                    <img src="icons/python.png" alt="Python Icon" title="Python">
+                    <img src="icons/html.png" alt="Python Icon" title="Python">
+                    <img src="icons/css.png" alt="Python Icon" title="Python">
+                </div>
+                <a href="https://github.com/YasinWaili/Stock-Data-Analysis" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    
     
     
 
