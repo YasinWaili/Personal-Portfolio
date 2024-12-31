@@ -97,7 +97,7 @@
 
         .resume-button {
             display: inline-block;
-            margin-left: 100px;
+            margin-left: px;
             margin-top: 60px;
             padding: 20px 30px;
             font-size: 16px;
@@ -261,6 +261,76 @@
             transform: translateY(-2px);
         }
 
+        /* Section header styling */
+        .section-header {
+            text-align: center;
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* About Me section */
+        .about-section {
+            margin-top: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4; /* Match with the page's background */
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-text h3 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 20px;
+            color: #464f50;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-image img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .resume-button img.resume-icon {
+        width: 20px; /* Adjust the size of the icon */
+        height: 20px;
+        margin-left: 10px; /* Add some space between the text and the icon */
+        vertical-align: middle; /* Align the icon with the text */
+        }
+
+
+
         
     </style>
 </head>
@@ -291,6 +361,7 @@
         </div>
     </div>
 
+
     <div class="intro">
         <p>Hello, I am</p>
     </div>
@@ -300,16 +371,45 @@
         <h1>Yasin Waili</h1>
     </div>
 
+
     <div class="Sub-Text">
         <h1>I am a passionate computer science student currently in my third year at Carleton University. 
             I am enthusiastic about solving complex problems, 
             building efficient systems, and continuously expanding my technical knowledge.</h1>
     </div>
 
-    <a href="pdf/Yasin Waili - Resume.pdf" target="_blank" class="resume-button">
-        Resume  <i class="fas fa-file"></i>
-    </a>
 
+    <section id="about" class="about-section">
+        <h2 class="section-header">About Me</h2>
+        <div class="about-content">
+            <!-- Left-side text -->
+            <div class="about-text">
+                <h3>Hello! I'm Yasin Waili.</h3>
+                <p>
+                    I am a third-year Computer Science Honours student at Carleton University, with a minor in statistics. 
+                    Over the course of my academic years, I have built a strong foundation in Programming, 
+                    Data Structures and Algorithms, Object-Oriented Programming, Software Engineering, Systems Programming, 
+                    and Databases.
+                </p>
+
+                <p>    
+                    I am deeply passionate about solving complex problems and creating efficient software solutions. I
+                    continuously strive to expand my knowledge and skills, embracing every challenge as an opportunity to grow.
+                </p>
+
+                <a href="pdf/Yasin Waili - Resume.pdf" target="_blank" class="resume-button">
+                    Resume <img src="icons/resume.png" alt="Resume Icon" class="resume-icon">
+                </a>
+                
+            </div>
+    
+            <!-- Right-side image -->
+            <div class="about-image">
+                <img src="image/Yasin-Waili-AboutMe.png" alt="Yasin Waili">
+            </div>
+        </div>
+    </section>
+    
     <!-- Skills section -->
     <div class="Sub-Header">
         <h1>Skills</h1>
@@ -425,6 +525,12 @@
                     <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="full-page">
+        <div class="Sub-Header">
+            <h1>Contact Me</h1>
         </div>
     </section>
     
