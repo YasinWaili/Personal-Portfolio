@@ -11,39 +11,40 @@
         /* General styles */
         body {
             margin: 0;
-            font-family: "Rubik", sans-serif; /* Change font to Rubik */
-            background-color: #f4f4f4; /* Soft background color for the page */
-            color: #333; /* Default text color */
+            font-family: "Rubik", sans-serif; 
+            background-color: #f4f4f4; 
+            color: #333; 
         }
 
         /* Top bar styling */
         .top-bar {
-            background-color: #f4f4f4; /* Same as page background for blending */
-            border-bottom: 1px solid #ddd; /* Subtle border for separation */
+            background-color: #f4f4f4; 
+            border-bottom: 1px solid #ddd; 
             display: flex;
-            justify-content: flex-end; /* Align links to the right */
+            justify-content: flex-end; 
             align-items: center;
-            padding: 10px 20px; /* Add some padding for spacing */
-            position: sticky; /* Sticks to the top when scrolling */
+            padding: 10px 20px;
+            position: sticky; 
             top: 0;
             z-index: 1000;
         }
 
         .top-bar a {
-            color: #333; /* Black text for navigation links */
+            color: #333; 
             text-decoration: none;
-            font-size: 15px; /* Smaller text size */
+            font-size: 15px; 
             padding: 2px 1px;
-            margin-right: 30px; /* Space between links */
+            margin-right: 30px; 
             transition: color 0.3s, background-color 0.3s;
         }
 
         .top-bar a:hover {
-            color: white; /* Highlight text */
-            background-color: #555; /* Subtle highlight on hover */
+            color: white;
+            background-color: #555;
             border-radius: 4px;
         }
 
+        /* Social icons */
         .social-icons {
             display: flex;
             gap: 15px; /* Add space between icons */
@@ -56,22 +57,24 @@
         }
 
         .social-icons a:hover {
-            color: #555; /* Highlight on hover */
+            color: #555; 
         }
 
+        /* Home section and text styling*/
+
         .intro {
-            color: #7f8c8d; /* Soft gray color */
-            font-size: 18px; /* Slightly smaller font */
+            color: #7f8c8d; 
+            font-size: 18px;
             margin-left: 100px;
             margin-top: 100px;
             position: relative;
             top: 100px;
-            font-weight: 1000; /* Medium weight for text */
+            font-weight: 1000; 
         }
 
 
         .header {
-            color: #2c3e50; /* Dark blue-gray */
+            color: #2c3e50;
             font-size: 36px;
             margin-left: 100px;
             position: relative;
@@ -79,7 +82,7 @@
         }
 
         .Sub-Text {
-            color:#7f8c8d;; /* Soft gray */
+            color:#7f8c8d;;
             font-size: 18px;
             margin-left: 100px;
             position: relative;
@@ -89,12 +92,14 @@
         }
 
         .Sub-Header {
-            color: #2c3e50; /* Dark blue-gray */
+            color: #2c3e50; 
             font-size: 18px;
             text-align: center;
             margin-top: 300px;
         }
 
+
+        /* Resume button */
 
         .resume-button {
             display: inline-block;
@@ -113,9 +118,10 @@
         }
 
         .resume-button:hover {
-            background-color: #555; /* Highlight button on hover */
+            background-color: #555; 
         }
 
+        /* Skills styling */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -147,10 +153,10 @@
         }
 
         .skill img {
-            width: 60px; /* Adjust icon size */
+            width: 60px; 
             height: 60px;
-            margin-bottom: 10px; /* Space between icon and text */
-            object-fit: contain; /* Ensures the image fits nicely */
+            margin-bottom: 10px; 
+            object-fit: contain;
         }
 
 
@@ -161,7 +167,7 @@
             margin: 0;
         }
         
-        /* Projects section container */
+        /* Projects section styling */
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -278,7 +284,7 @@
             align-items: center;
             justify-content: center;
             padding: 50px 20px;
-            background-color: #f4f4f4; /* Match with the page's background */
+            background-color: #f4f4f4; 
         }
 
         .about-content {
@@ -323,11 +329,12 @@
         }
 
 
+        /* Resume button styling */
         .resume-button img.resume-icon {
-        width: 20px; /* Adjust the size of the icon */
+        width: 20px;
         height: 20px;
-        margin-left: 10px; /* Add some space between the text and the icon */
-        vertical-align: middle; /* Align the icon with the text */
+        margin-left: 10px; 
+        vertical-align: middle; 
         }
 
         .contact-container {
@@ -338,6 +345,7 @@
         padding: 20px;
         }
 
+        /* Contact me styling */
         .contact-item {
             text-align: center;
             max-width: 300px;
@@ -345,7 +353,7 @@
         }
 
         .contact-icon {
-            width: 40px; /* Smaller icon size */
+            width: 40px; 
             height: 40px;
             margin-bottom: 10px;
         }
@@ -371,6 +379,64 @@
             text-decoration: underline;
         }
 
+        /* Dark Mode Css */
+        body.dark-mode {
+            background-color: #121212;
+            color: #f4f4f4; 
+        }
+
+        body.dark-mode .top-bar {
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333;
+        }
+
+        body.dark-mode .top-bar a {
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .top-bar a:hover {
+            background-color: #555;
+        }
+
+        body.dark-mode .project-box,
+        body.dark-mode .skill {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .github-link {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .github-link:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        body.dark-mode .about-section {
+            background-color: #121212; 
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .about-text,
+        body.dark-mode .about-text h3,
+        body.dark-mode .about-text p {
+            color: #f4f4f4; 
+        }
+
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode p,
+        body.dark-mode a {
+            color: #f4f4f4 !important;
+        }
+
+
         
     </style>
 </head>
@@ -395,10 +461,10 @@
             <a href="https://github.com/YasinWaili" target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a title="Dark Mode">
+            <a id="dark-mode-toggle" title="Toggle Dark Mode">
                 <i class="fas fa-moon"></i>
             </a>
-        </div>
+        </div>        
     </div>
 
     <section id="home" class="full-page">
@@ -609,8 +675,7 @@
         </div>
     </section>
     
-    
-
+    <script src="script/script.js"></script>
 </body>
 
 </html>
