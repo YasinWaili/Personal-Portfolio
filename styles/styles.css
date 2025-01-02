@@ -1,0 +1,427 @@
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: "Rubik", sans-serif; 
+            background-color: #f4f4f4; 
+            color: #333; 
+        }
+
+        /* Top bar styling */
+        .top-bar {
+            background-color: #f4f4f4; 
+            border-bottom: 1px solid #ddd; 
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar a {
+            color: #333; 
+            text-decoration: none;
+            font-size: 15px; 
+            padding: 2px 1px;
+            margin-right: 30px; 
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: white;
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Add space between icons */
+        }
+
+        .social-icons a {
+            color: #333; /* Icon color */
+            font-size: 18px; /* Icon size */
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #555; 
+        }
+
+        /* Home section and text styling*/
+
+        .intro {
+            color: #7f8c8d; 
+            font-size: 18px;
+            margin-left: 100px;
+            margin-top: 100px;
+            position: relative;
+            top: 100px;
+            font-weight: 1000; 
+        }
+
+
+        .header {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-left: 100px;
+            position: relative;
+            top: 60px;
+        }
+
+        .Sub-Text {
+            color:#7f8c8d;;
+            font-size: 18px;
+            margin-left: 100px;
+            position: relative;
+            top: 30px;
+            max-width: 950px;
+            line-height: 1.5;
+        }
+
+        .Sub-Header {
+            color: #2c3e50; 
+            font-size: 18px;
+            text-align: center;
+            margin-top: 300px;
+        }
+
+
+        /* Resume button */
+
+        .resume-button {
+            display: inline-block;
+            margin-left: px;
+            margin-top: 60px;
+            padding: 20px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-button:hover {
+            background-color: #555; 
+        }
+
+        /* Skills styling */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill img {
+            width: 60px; 
+            height: 60px;
+            margin-bottom: 10px; 
+            object-fit: contain;
+        }
+
+
+        .skill p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0;
+        }
+        
+        /* Projects section styling */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual project box */
+        .project-box {
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Project image */
+        .project-box img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        /* Project title */
+        .project-box h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Project description */
+        .project-box p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        /* Project skills icons */
+        .project-skills {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-skills img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+
+        .project-skills img:hover {
+            transform: scale(1.1);
+        }
+
+        /* GitHub link styling */
+        .github-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 120px;
+            text-align: center;
+        }
+
+        .github-link i {
+            margin-right: 8px; /* Space between icon and text */
+            font-size: 18px;
+        }
+
+        .github-link:hover {
+            background-color: #555;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Section header styling */
+        .section-header {
+            text-align: center;
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* About Me section */
+        .about-section {
+            margin-top: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4; 
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-text h3 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 20px;
+            color: #464f50;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-image img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        /* Resume button styling */
+        .resume-button img.resume-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px; 
+        vertical-align: middle; 
+        }
+
+        .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        }
+
+        /* Contact me styling */
+        .contact-item {
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .contact-icon {
+            width: 40px; 
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contact-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark Mode Css */
+        body.dark-mode {
+            background-color: #121212;
+            color: #f4f4f4; 
+        }
+
+        body.dark-mode .top-bar {
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333;
+        }
+
+        body.dark-mode .top-bar a {
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .top-bar a:hover {
+            background-color: #555;
+        }
+
+        body.dark-mode .project-box,
+        body.dark-mode .skill {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .github-link {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .github-link:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        body.dark-mode .about-section {
+            background-color: #121212; 
+            color: #f4f4f4;
+        }
+
+        body.dark-mode .about-text,
+        body.dark-mode .about-text h3,
+        body.dark-mode .about-text p {
+            color: #f4f4f4; 
+        }
+
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode p,
+        body.dark-mode a {
+            color: #f4f4f4 !important;
+        }
