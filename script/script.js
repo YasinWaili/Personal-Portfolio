@@ -11,3 +11,19 @@ toggleButton.addEventListener('click', () => {
         icon.classList.replace('fa-sun', 'fa-moon');
     }
 });
+
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target); 
+        }
+    });
+}, { threshold: 0.1 }); 
+
+const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+animatedElements.forEach(element => {
+    observer.observe(element);
+});

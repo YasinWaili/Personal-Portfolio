@@ -425,3 +425,27 @@
         body.dark-mode a {
             color: #f4f4f4 !important;
         }
+        
+        /* Define the animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Initial state of the element before animation */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        /* Animation class added when element is in view */
+        .in-view {
+            animation: fadeIn 1s forwards;
+        }
