@@ -9,6 +9,19 @@
         /* Top bar styling */
         .top-bar {
             background-color: #f4f4f4; 
+            border-bottom: none; 
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+
+        
+        .top-bar.scrolled {
+            background-color: #f4f4f4; 
             border-bottom: 1px solid #ddd; 
             display: flex;
             justify-content: flex-end; 
@@ -34,6 +47,30 @@
             border-radius: 4px;
         }
 
+        .scroll-to-top {
+            display: none; 
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; 
+            transform: translateY(20px);
+        }
+        
+        .scroll-to-top:hover {
+            background-color: #555;
+        }        
+
         /* Social icons */
         .social-icons {
             display: flex;
@@ -54,9 +91,9 @@
 
         .intro {
             color: #7f8c8d; 
-            font-size: 18px;
-            margin-left: 100px;
-            margin-top: 100px;
+            font-size: 48px;
+            margin-left: 150px;
+            margin-top: 120px;
             position: relative;
             top: 100px;
             font-weight: 1000; 
@@ -65,25 +102,25 @@
 
         .header {
             color: #2c3e50;
-            font-size: 36px;
-            margin-left: 100px;
+            font-size: 56px;
+            margin-left: 150px;
             position: relative;
-            top: 60px;
+            top: 20px;
         }
 
         .Sub-Text {
-            color:#7f8c8d;;
-            font-size: 18px;
-            margin-left: 100px;
+            color:#7f8c8d;
+            font-size: 24px;
+            margin-left: 150px;
             position: relative;
-            top: 30px;
+            top: -40px;
             max-width: 950px;
             line-height: 1.5;
         }
 
         .Sub-Header {
             color: #2c3e50; 
-            font-size: 18px;
+            font-size: 24px;
             text-align: center;
             margin-top: 300px;
         }
