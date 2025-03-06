@@ -53,3 +53,38 @@
             behavior: 'smooth',
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const roles = ["Computer Scientist", "Software Developer", "Data Scientist", "Statistician"];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+    
+        function typeEffect() {
+            let subTextElement = document.getElementById("dynamic-text");
+    
+            if (!subTextElement) return; // Ensure element exists
+    
+            let currentText = roles[roleIndex];
+            let displayText = currentText.substring(0, charIndex);
+    
+            subTextElement.textContent = displayText;
+    
+            if (!deleting && charIndex < currentText.length) {
+                charIndex++;
+                setTimeout(typeEffect, 100); // Typing speed
+            } else if (deleting && charIndex > 0) {
+                charIndex--;
+                setTimeout(typeEffect, 50); // Deleting speed
+            } else {
+                deleting = !deleting;
+                if (!deleting) {
+                    roleIndex = (roleIndex + 1) % roles.length; // Move to the next role
+                }
+                setTimeout(typeEffect, 1000); // Pause before switching roles
+            }
+        }
+    
+        typeEffect();
+    });
+    
